@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.align-items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.go-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mt-10 {
+    margin-top: 10px;
+} .mb-10 {
+    margin-bottom: 10px;
+} .gp-5 {
+    gap: 5px;
+} .gp-10 {
+    gap: 10px;
+} .gp-15 {
+    gap: 15px;
+} .gp-50 {
+    gap: 50px;
+}
+
+.row-1 {
+    padding: 20px 40px;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+@keyframes changingBackground {
+    0% {
+        background: linear-gradient(163deg, rgba(255,252,0,1) 0%, rgba(0,224,255,1) 100%);
+    }
+
+    50% {
+        background: linear-gradient(163deg, rgba(205,0,255,1) 0%, rgba(255,119,0,1) 100%);
+    }
+
+    100% {
+        background: linear-gradient(163deg, rgba(255,209,0,1) 0%, rgba(255,0,0,1) 100%);
+    }
+}
+.container {
+    height: 100vh;
+    animation-name: changingBackground;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
